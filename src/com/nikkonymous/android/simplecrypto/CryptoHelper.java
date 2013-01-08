@@ -8,10 +8,10 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class CryptoHelper {
-	private IvParameterSpec ivspec;
-    private SecretKeySpec keyspec;
-    private Cipher cipher;
-    byte[] encrypted, decrypted;
+    	private IvParameterSpec ivspec;
+    	private SecretKeySpec keyspec;
+    	private Cipher cipher;
+    	byte[] encrypted, decrypted;
     
     /*Constructor*/
     public CryptoHelper(String SecretKey, String iv) {

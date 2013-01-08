@@ -1,2 +1,1 @@
-android-crypto
-==============
+Simple crypto implementation sample for android.

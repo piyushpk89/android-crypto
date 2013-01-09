@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CryptoActivity" >
+
+    <Button
+        android:id="@+id/btnEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOriginal"
+        android:layout_below="@+id/txtOriginal"
+        android:layout_marginTop="18dp"
+        android:text="Encrypt" />
+
+    <EditText
+        android:id="@+id/txtOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOriginal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Original text: " />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnEncrypt"
+        android:layout_below="@+id/btnEncrypt"
+        android:layout_marginTop="28dp"
+        android:text="Encrypted text: " />
+
+    <EditText
+        android:id="@+id/txtEncrypted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDecrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEncrypted"
+        android:layout_below="@+id/txtEncrypted"
+        android:layout_marginTop="18dp"
+        android:text="Decrypt" />
+
+    <EditText
+        android:id="@+id/txtDecrypted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDecrypt"
+        android:layout_below="@+id/btnDecrypt"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

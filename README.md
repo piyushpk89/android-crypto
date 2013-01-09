@@ -1,1 +1,2 @@
-Simple crypto implementation sample for android.
+A simple crypto implementation for android. 
+
